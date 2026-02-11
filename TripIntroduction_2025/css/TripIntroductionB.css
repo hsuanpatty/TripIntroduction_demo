@@ -646,7 +646,9 @@ figcaption.tripBanner-flex p span {
     width: 100%;
     object-fit: cover;
     border-radius: 110px 0 110px 0;
+    overflow: hidden;
 }
+
 @media (max-width: 768px) {
     .tour-highlights .highlights-image img {
         border-radius: 80px 0 80px 0;
@@ -1005,7 +1007,7 @@ figcaption.tripBanner-flex p span {
 }
 
 .info-item p {
-    color: #635c5c;
+    color: #554f4f;
     font-weight: 500;
     font-family: "Noto Sans TC", "微軟正黑體", "Microsoft JhengHei", sans-serif;
 }
