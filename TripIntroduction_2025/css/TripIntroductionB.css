@@ -201,6 +201,7 @@ z-index: 98;
 
 @media (max-width: 425px) {
     .menu-infoDetail {
+        padding-left: 8px;
         display: flex;
         justify-content: space-around;
     }
@@ -224,7 +225,7 @@ z-index: 98;
     display: block;
     position: absolute;
     top: 1px;
-    right: -21px;
+    right: -15px;
     height: 100%;
     width: 1px;
     background-color: #fff;
