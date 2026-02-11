@@ -196,6 +196,7 @@ z-index: 98;
 
 @media (max-width: 425px) {
     .menu-infoDetail {
+        padding-left: 8px;
         display: flex;
         justify-content: space-around;
     }
@@ -219,7 +220,7 @@ z-index: 98;
     display: block;
     position: absolute;
     top: 1px;
-    right: -21px;
+    right: -15px;
     height: 100%;
     width: 1px;
     background-color: #fff;
@@ -275,6 +276,7 @@ z-index: 98;
     .menu-infoDetail li {
         display: flex;
         align-items: center;
+        margin-right: 10px;
     }
 
     .menu-infoDetail li a {
@@ -695,6 +697,17 @@ figcaption.tripBanner-flex p span {
     align-items: center;
     gap: 2rem;
 }
+
+@media (max-width: 767.98px) {
+    #tourist-information {
+        margin-top: 0;
+    }
+
+    .tourist-information-icon {
+        margin-top: 2rem;
+    }
+}
+
 
 .info-detail-content p,
 .info-detail-content span,
@@ -2014,7 +2027,7 @@ background-color: #f0e5e9;
 }
 
 .t1-box{
-padding: 30px 60px 30px 60px;
+padding: 30px 40px 30px 40spx;
 }
 
 .t2-box .trip-text1{
@@ -3006,6 +3019,7 @@ position: static;
 .TripMain-navigate a {
     font-size: 15px;
     color: #484141;
+    line-height: 28px;
 }
 
 .TripMain-navigate a:hover {
