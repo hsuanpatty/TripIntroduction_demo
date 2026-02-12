@@ -225,7 +225,7 @@ z-index: 98;
     display: block;
     position: absolute;
     top: 1px;
-    right: -15px;
+    right: -21px;
     height: 100%;
     width: 1px;
     background-color: #fff;
@@ -289,8 +289,6 @@ z-index: 98;
         font-size: 14px;
     }
 
-
-    
     li.trip-map,
     li.trip-feature,
     li.trip-info {
@@ -318,6 +316,10 @@ z-index: 98;
 
     .download-text{
         display: none;
+    }
+
+    .menu-infoDetail li::before {
+        right: -15px;
     }
 
 }
@@ -724,6 +726,7 @@ figcaption.tripBanner-flex p span {
 .info-content span,
 .highlights-detailinfo,
 .departure-date,
+.number,
 .card-content h3,
 .seats {
     color: #484141;
@@ -735,6 +738,7 @@ figcaption.tripBanner-flex p span {
 .info-content p,
 .highlights-detailinfo,
 .departure-date,
+.number,
 .seats {
     font-size: 15px;
     font-weight:700;
@@ -749,6 +753,7 @@ figcaption.tripBanner-flex p span {
 }
 
 .tourist-detailinfo .departure-date,
+.tourist-detailinfo .number,
 .tourist-detailinfo .flight,
 .tourist-detailinfo .visa,
 .tourist-detailinfo .departure-status,
@@ -759,6 +764,7 @@ figcaption.tripBanner-flex p span {
 
 
 .departure-date .info-item-label::after,
+.number .info-item-label::after,
 .flight .info-item-label::after, 
 .visa .info-item-label::after,
 .departure-status .info-item-label::after,
@@ -790,7 +796,7 @@ figcaption.tripBanner-flex p span {
 
 .tourist-detailinfo {
     background-color:  rgb(247 232 232 / 50%);
-    padding: 25px 20px;
+    padding: 15px 20px;
     width: 45%;
 }
 
@@ -1007,7 +1013,7 @@ figcaption.tripBanner-flex p span {
 }
 
 .info-item p {
-    color: #554f4f;
+    color: #635c5c;
     font-weight: 500;
     font-family: "Noto Sans TC", "微軟正黑體", "Microsoft JhengHei", sans-serif;
 }
@@ -1032,7 +1038,7 @@ figcaption.tripBanner-flex p span {
 }
 
 .info-item-text {
-    font-size: 1rem;
+    font-size: 1.1rem;
 }
 
 .info-item-text .blue {
@@ -3062,7 +3068,7 @@ position: static;
     width: 86vw;
     max-width: 1300px;
     margin: 0 auto;
-    margin-top: 3.7rem;
+    margin-top: 3.5rem;
     padding-left: 6px;
 }
 
@@ -3099,4 +3105,10 @@ position: static;
 .info-overview-bg{
     max-height:17.5rem;
     overflow:hidden;
+}
+
+@media (max-width: 767.98px) {
+    .TripMain-navigate {
+        margin-top: 2rem;
+    }
 }
