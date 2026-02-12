@@ -791,7 +791,7 @@ figcaption.tripBanner-flex p span {
 }
 
 .info-item.taxes .sub-info + .sub-info {
-  padding-left: 12px;
+  padding-left: 50px;
 }
 
 .tourist-detailinfo {
@@ -3112,3 +3112,4 @@ position: static;
         margin-top: 2rem;
     }
 }
+
