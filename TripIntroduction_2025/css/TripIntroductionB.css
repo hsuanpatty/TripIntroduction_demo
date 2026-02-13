@@ -790,9 +790,32 @@ figcaption.tripBanner-flex p span {
     align-items: baseline;
 }
 
-.info-item.taxes .sub-info + .sub-info {
-  padding-left: 50px;
+.info-item.taxes .sub-info {
+  position: relative;
 }
+
+/* 只針對稅金那一個加線 */
+.info-item.taxes {
+  display: flex;
+  align-items: center;
+}
+
+.info-item.taxes .sub-info:first-child {
+  position: relative;
+  padding-right: 20px; /* 留給線的空間 */
+}
+
+.info-item.taxes .sub-info:first-child::before {
+    content: '';
+    position: absolute;
+    background-color: #484141;
+    width: 1px;
+    height: 60%;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px; /* 線就在 padding 領域內 */
+}
+
 
 .tourist-detailinfo {
     background-color:  rgb(247 232 232 / 50%);
@@ -1053,7 +1076,7 @@ figcaption.tripBanner-flex p span {
     display: flex;          /* ✔ 讓 align-items 生效 */
     align-items: center;    /* ✔ 上下置中 */
     line-height: 1.4;       /* ✔ 給文字正常高度 */
-    padding: 6px 0;         /* ✔ 行與行的高度 */
+    padding: 5px 0;         /* ✔ 行與行的高度 */
 }
 
 /* .tourist-info .info-item:nth-child(-n + 3)::after {
@@ -3112,4 +3135,3 @@ position: static;
         margin-top: 2rem;
     }
 }
-
